@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button {
+    background-color: #7d5a84 !important;
+    transition: 1s;
+}
+button:hover {
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);
+}
+body {
+    background-color: rgba(125,90,132,255);
+    font-family: 'open sans';
+    color: #7d5a84
+}
+.homePage {
+    background-image: url('../images/homeBackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom -18px left;
+}
+header {
+    box-shadow: 0px 2px 26px rgba(0, 0, 0, 0.2);
+}
+.navigationBar {
+    box-shadow: inset 0px 9px 18px -2px rgba(0, 0, 0, 0.2);
+}
+
+.nav-link{
+    color: #7d5a84;
+}
+.nav-link {
+    -webkit-text-stroke: 0.9px;
+    font-size: 22px;
+    transition: 1s;
+}
+.nav-link:hover {
+    border-radius: 8px;
+    background-color: #7d5a84 ;
+    color: white;
+    transform: translateOrigin(100px);
+}
+.whiteCircle, .dynamicsImage, .discountOuterDiv {
+    border: 1px solid #7d5a84;
+    outline: 1px solid #c5a0cc;
+    outline-offset: 22px;
+}
+.circleTop, .circleBottom {
+    bottom: 48%;
+    right: 49%;
+}
+
+.outerCircle {
+    background-color: #d3dddd;
+    box-shadow: 0px -51px 30px rgba(0, 0,0,0.1);
+}
+.transparentOuterCircle {
+    background-color: rgba(211, 221, 221, 0.521);
+    padding: 2.25rem;
+}
+
+.summerClassesDiv > div:last-child {
+    -webkit-text-stroke: 1px;
+}
+.yoga {
+    font-size: 45px !important;
+}
+.yoga::before {
+    content: attr(data-text);
+    position: absolute;
+    opacity: 1;
+    overflow: hidden;
+    color: #7d5a84;
+    animation: animate 2s linear ;
+}
+.descriptionImage img{
+    width: 18%;
+}
+
+.yogaClassesHeading {
+    background-image: url('../images/yogaClasses_bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom  right 56%;
+}
+.yogaClassesHeading > div:last-child {
+    font-size: 2.2em;
+    -webkit-text-stroke: 2px;
+}
+.imageTitle {
+    width: 88%;
+    height: 90%;
+    top: 4%;
+    left: 6%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    transition: 0.6s;
+}
+.imageTitle:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+.day, .line {
+    border-color: #7d5a84 !important;
+}
+
+.discountOffer {
+    background-image: url('../images/white_bg.png'),  url('../images/discountOffer_light_bg.png'), url('../images/discountOffer_bg-dark.png'), url('../images/summerClasses.png') ;
+    background-repeat: no-repeat;
+    background-position: top 35% right 48%, top 30% left 53%, top 32% left 53%, top 9rem right 75%;
+}
+.discountPercent {
+    font-size: 4em;
+}
+.blankSpace {
+    height: 17rem;
+}
+
+.practiceDynamicOuterDiv {
+    background-color: #e9f2f2;
+}
+.practiceDynamics {
+    border-top-left-radius: 658px;
+}
+.positionsDynamics {
+    border-top-right-radius: 658px;
+}
+
+.content > .heading, .summerClassesHeading {
+    font-size: 3em;
+}
+
+.asanaName {
+    position: relative;
+    color: white;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+   
+}
+.asanaName::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #7d5a84;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    animation: text 4s linear infinite ;
+}
+
+.asanaDescription {
+    word-spacing: 6px;
+    line-height: 43px;
+    font-weight: 500;
+    font-size: 21px;
+    border-bottom: 2px solid;
+}
+.dynamicsImageInnerDiv, .homeDescription, .innerWorkshopDiv, .workshopImageDiv {
+    border: 2px solid ;
+}
+
+.dynamicsImageInnerDiv > img {
+    width: 98%;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);
+}
+.card-title, .ten {
+    -webkit-text-stroke: 2px;
+    letter-spacing: 2px;
+    transition: 1s;
+}
+.card-text > p {
+    font-size: 19px;
+}
+.summerClassesDiv, .off, .summerClasses, .yogaInitiationWorkshop, .phrase, .content > .heading, .summerClassesHeading, .yoga, .yogaClassesHeading {
+    letter-spacing: 4px;
+}
+.lifestyleHeading, .practiceDynamics, .positionsDynamics {
+    letter-spacing: 2px;
+}
+.initiation {
+    letter-spacing: 14px;
+}
+.workshopText {
+    top: 65%;
+    right: 5%;
+}
+footer {
+    background-image: url('../images/white_bg.png'), url('../images/footer_bg_light.png'), url('../images/footer-bg-dark.png');
+    background-repeat: no-repeat;
+    background-position: bottom 88% right 47%, top 13% right 47%, top 2% right 45%;
+}
+.footerDescription {
+    font-weight: 500;
+    font-size: 1.2em;
+    line-height: 24px;
+}
+footer ul li {
+    font-weight: 500;
+    line-height: 30px
+}
+
+/* animations */
+.circleTop{
+    animation: circle 5s linear infinite;
+}
+.circleBottom{
+    animation: revolve 5s linear infinite
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg)translate(281px)rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)translate(281px)rotate(-360deg);
+    }
+}
+
+@keyframes revolve {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg)translate(-270px)rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)translate(-270px)rotate(-360deg);
+    }
+}
+
+@keyframes animate {
+
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.25;
+    }
+    50% {
+        opacity: 0.50;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text {
+    0% {
+        height: 0;
+    }
+    25% {
+        height: 25%;
+    }
+    50% {
+        height: 50%;
+    }
+    100% {
+        height: 100%;
+    }
+
+}
