@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* div {
+    border: 2px solid red;
+} */
 button {
     background-color: #7d5a84 !important;
     transition: 1s;
@@ -13,9 +16,10 @@ button:hover {
     box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);
 }
 body {
-    background-color: rgba(125,90,132,255);
+    /* background-color: rgba(125,90,132,255); */
+    background-color: white;
     font-family: 'open sans';
-    color: #7d5a84
+    color: #7d5a84;
 }
 .homePage {
     background-image: url('../images/homeBackground.png');
@@ -66,8 +70,8 @@ header {
 .summerClassesDiv > div:last-child {
     -webkit-text-stroke: 1px;
 }
-.yoga {
-    font-size: 45px !important;
+.yoga, .yogaInitiation{
+    font-size: 48px !important;
 }
 .yoga::before {
     content: attr(data-text);
@@ -80,11 +84,15 @@ header {
 .descriptionImage img{
     width: 18%;
 }
+.headingPara {
+    width: 340px;
+    line-height: 25px;
+}
 
 .yogaClassesHeading {
     background-image: url('../images/yogaClasses_bg.png');
     background-repeat: no-repeat;
-    background-position: bottom  right 56%;
+    background-position: top 102% right 56%;
 }
 .yogaClassesHeading > div:last-child {
     font-size: 2.2em;
@@ -106,11 +114,17 @@ header {
 .day, .line {
     border-color: #7d5a84 !important;
 }
+.day, button {
+    letter-spacing: 2px;
+}
 
 .discountOffer {
     background-image: url('../images/white_bg.png'),  url('../images/discountOffer_light_bg.png'), url('../images/discountOffer_bg-dark.png'), url('../images/summerClasses.png') ;
     background-repeat: no-repeat;
-    background-position: top 35% right 48%, top 30% left 53%, top 32% left 53%, top 9rem right 75%;
+    background-position: top 0% right 48%, top 30% left 53%, top 32% left 53%, top 9rem right 75%;
+}
+.ten {
+    -webkit-text-stroke: 6px;
 }
 .discountPercent {
     font-size: 4em;
@@ -153,10 +167,10 @@ header {
 }
 
 .asanaDescription {
-    word-spacing: 6px;
-    line-height: 43px;
-    font-weight: 500;
-    font-size: 21px;
+    word-spacing: 2px;
+    line-height: 34px;
+    font-weight: 600;
+    font-size: 19px;
     border-bottom: 2px solid;
 }
 .dynamicsImageInnerDiv, .homeDescription, .innerWorkshopDiv, .workshopImageDiv {
@@ -172,16 +186,16 @@ header {
     z-index: 2;
     box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);
 }
-.card-title, .ten {
+.card-title  {
     -webkit-text-stroke: 2px;
     letter-spacing: 2px;
     transition: 1s;
 }
 .card-text > p {
-    font-size: 19px;
+    font-size: 20px;
 }
 .summerClassesDiv, .off, .summerClasses, .yogaInitiationWorkshop, .phrase, .content > .heading, .summerClassesHeading, .yoga, .yogaClassesHeading {
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 .lifestyleHeading, .practiceDynamics, .positionsDynamics {
     letter-spacing: 2px;
@@ -189,6 +203,7 @@ header {
 .initiation {
     letter-spacing: 14px;
 }
+
 .workshopText {
     top: 65%;
     right: 5%;
@@ -266,4 +281,38 @@ footer ul li {
         height: 100%;
     }
 
+}
+@media (min-width:320px) and (max-width:700px) {
+    body {
+        text-align: center;
+    }
+    .headingPara {
+        width: 228px;
+    }
+    .transparentOuterCircle {
+        padding: 20px;
+    }
+    .yoga {
+        font-size: 1px !important;
+    }
+
+    @keyframes circle {
+        0% {
+            transform: rotate(0deg)translate(120px)rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg)translate(120px)rotate(-360deg);
+        }
+    }
+    
+    @keyframes revolve {
+        0% {
+            opacity: 1;
+            transform: rotate(0deg)translate(-120px)rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg)translate(-120px)rotate(-360deg);
+        }
+    }
+    
 }
