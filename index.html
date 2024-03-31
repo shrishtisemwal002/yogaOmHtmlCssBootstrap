@@ -5,29 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yoga OM</title>
-
+    <!-- link for bootstrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    <!-- css file link -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-
+    <!-- link for font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
-
-    <div class="homePage mt-3">
+    <!-- homepage of the website -->
+    <section class="homePage mt-3">
+        <!-- header part -->
         <header>
+            <!-- navigation Bar -->
             <nav class="navbar navbar-expand-lg bg-white px-md-5 py-md-3 navigationBar">
                 <div class="container-fluid">
+                    <!-- logo of the website -->
                     <div class="logo">
-                        <img src="./assets/images/logo.png" alt="logo" style="width: 88%;" />
+                        <img src="./assets/images/logo.png" alt="logo" />
                     </div>
+                    <!-- toggle button for navbar -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
+                    <!-- Navbar menu -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -50,135 +55,175 @@
                 </div>
             </nav>
         </header>
-
-        <section class="align-items-center py-4 d-flex">
+        <!-- Circular div on the homepage -->
+        <div class="align-items-center py-4 d-flex">
 
             <div class="rounded-circle my-5 m-auto transparentOuterCircle">
-
                 <div class="rounded-circle p-md-5 p-2 outerCircle">
                     <div class="rounded-circle p-md-4 p-1 bg-white whiteCircle position-relative">
+                        <!-- small circles rotating at the outer div -->
                         <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleTop" />
                         <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleBottom" />
-                        <div class="homeDescription bg-white text-center rounded-circle p-md-5" style="border: 2px solid;">
-                            <div class="h5 lead fs-md-1 p-md-3 p-1 mt-4 descriptionHeading mb-0 fs-6">Healthy 
-                                <span class="fs-4">&</span> 
-                                Fresh</div>
-                            <div class="h1 my-4 yoga position-relative text-white fw-bolder" data-text="YOGA">YOGA</div>
-                            <p class="fw-bold fs-md-4 fs-6 headingPara">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                            <div class="descriptionImage pt-4">
-                                <img src="./assets/images/flowerIcon.png" alt="flower"/>
+                        <!-- text written on circular div -->
+                        <div class="homeDescription bg-white text-center rounded-circle p-md-5"
+                            style="border: 2px solid;">
+                            <div class="h5 lead fs-md-1 p-md-3 p-1 mt-4 descriptionHeading mb-0 fs-6">Healthy
+                                <span class="fs-4">&</span>
+                                Fresh
                             </div>
+                            <div class="h1 my-4 yoga position-relative text-white fw-bolder" data-text="YOGA">YOGA</div>
+                            <p class="fw-bold fs-md-4 fs-md-6 text-sm-6 headingPara">Lorem ipsum dolor sit amet,
+                                consectetur adipisicing.</p>
+
+                            <div class="descriptionImage pt-md-4 py-2">
+                                <img src="./assets/images/flowerIcon.png" alt="flower" />
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-
+        </div>
+    </section>
+    <!-- next section after the homepage -->
     <section class="yogaClasses bg-white">
         <div class="container">
+            <!-- heading of the yoga asana section -->
             <div class="yogaClassesHeading py-5 text-center">
                 <div class="fs-2 text-uppercase fw-normal m-0 pt-md-3">meet our</div>
                 <div class="text-uppercase fs-2">yoga classes</div>
             </div>
-        
-        <div class="row py-md-5 px-md-5 mx-md-4 yogaAsana">
-
-            <div class="col-md-4 yogaCards col-11 m-auto my-md-0 my-5 ">
-                <div class="h1 fw-bold px-md-4 d-md-none d-block pt-4">Hatha</div>
-                <div class="roundImage rounded-circle p-md-3 p-5 mx-md-3 position-relative">
-                    <img src="./assets/images/Hatha.jpg" alt="Hatha Yoga" class="w-100 rounded-circle" />
-                    <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">hatha</div>
-                </div>
-                <div class="fs-4 ps-md-1 d-md-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-
-                <div class="h3 fw-bold px-md-4 d-md-block d-none">Hatha</div>
-                <p class="ps-md-4 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
-
-                <div class="d-flex mx-md-4 py-md-3 border-top day mx-2">
-                    <div class="h4 fw-bold pe-3 ms-md-0 mx-auto">Monday</div>
-                    <div class="h4 fw-light mx-auto">20:00 hs</div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-11 m-auto my-md-0 my-5 yogaCards">
-                <div class="h1 fw-bold px-4 d-md-none d-block pt-4 ">Ashtanga</div>
-                <div class="roundImage rounded-circle p-md-3 p-5 mx-3 position-relative">
-                    <img src="./assets/images/Ashtanga.jpg" alt="Ashtanga Yoga" class="rounded-circle w-100" />
-                    <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">ashtanga</div>
-                </div>
-                <div class="fs-4 ps-1 d-md-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-                <div class="h3 fw-bold px-4 d-md-block d-none">Ashtanga</div>
-                <p class="ps-4 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
-
-                <div class="d-flex mx-4 border-top py-3 day">
-                    <div class="h4 fw-bold pe-3 mx-md-0 mx-auto">Tuesday</div>
-                    <div class="h4 fw-light">18:00 hs</div>
-                </div>
-            </div>
-
-            <div class="col-md-4 yogaCards col-11 m-auto my-md-0 my-5">
-                <div class="h1 fw-bold px-4 d-md-none d-block pt-4 ">Kundalini</div>
-                <div class="roundImage rounded-circle p-md-3 p-5 mx-3 position-relative">
-                    <img src="./assets/images/Kundalini.jpg" alt="Kundalini Yoga" class="rounded-circle w-100" />
-                    <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">kundalini</div>
-                </div>
-                <div class="fs-4 ps-1 d-md-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-                <div class="h3 fw-bold px-4 d-md-block d-none">Kundalini</div>
-                <p class="ps-4 fs-5">Lorem ipsum dolor sit  consectetur adipisicing...</p>
-
-                <div class="d-flex mx-4 border-top py-3 day">
-                    <div class="h4 fw-bold pe-3 mx-md-0 mx-auto">Friday</div>
-                    <div class="h4 fw-light">13:30 hs</div>
-                </div>
-            </div>
-        </div>
-        <div class="row col-md-3 col-10 m-auto align-items-center">
-            <button type="button" class="btn btn-lg my-3 px-5 py-3 rounded-pill text-uppercase text-white fw-bold">Show More</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-md-swhite">
-                <div class="row discountOffer pt-5 container-fluid m-0">
-                    <div class="col-md-3 offset-md-1">
-                        <div class="discountOuterDiv p-4 rounded-circle bg-transparent my-4">
-                            <div class="discountDiv rounded-circle bg-white p-5">
-                                <div class="py-2 text-center fw-light discountPercent"><span class="ten pe-2">10</span>%</div>
-                                <div class="h2 text-uppercase fw-normal text-center off">off</div>
-                            </div>
-                        </div>
-                        <div class="summerClasses mt-5 text-white px-5 py-5">
-                            <div class="summerClassesHeading text-uppercase fw-bold mb-0">Summer</div>
-                            <div class="summerClassesHeading text-uppercase mb-4">Class</div>
-                            <div class="date">
-                                <div class="h5 fw-bold mb-2">22.12.2020</div>
-                                <div class="h5 fw-bold">24.03.2021</div>
-                            </div>
-                            <div class="blankSpace my-5 d-md-block d-none"></div>
-                        </div>
+            <!-- A row containing three yoga asana cards -->
+            <div class="row py-md-5 px-md-5 mx-md-4 yogaAsana">
+                <!-- first card -->
+                <div class="col-lg-4 yogaCards col-11 m-auto my-md-0 my-5">
+                    <!-- name of asana which will be visible on mobile and tablet screens -->
+                    <div class="h1 fw-bold px-md-4 d-lg-none d-block pt-4">Hatha</div>
+                    
+                    <div class="roundImage rounded-circle p-lg-3 p-5 mx-md-3 position-relative">
+                        <!-- asana image -->
+                        <img src="./assets/images/Hatha.jpg" alt="Hatha Yoga" class="w-100 rounded-circle" />
+                        <!-- name of asana which will be visible on hovering over the image -->
+                        <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">hatha</div>
+                    </div>
+                    <!-- three dotted icon present in the card -->
+                    <div class="fs-4 ps-md-1 d-lg-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <!-- asana name and description -->
+                    <div class="h3 fw-bold px-md-4 d-lg-block d-none">Hatha</div>
+                    <p class="ps-lg-4 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
+                    <!-- day and timing -->
+                    <div class="d-flex mx-lg-4 py-md-3 border-top day mx-2 justify-content-lg-start justify-content-md-center">
+                        <div class="h4 fw-bold pe-3 ms-md-0 mx-4">Monday</div>
+                        <div class="h4 fw-light mx-4">20:00 hs</div>
                     </div>
                 </div>
+
+                <!-- second card -->
+                <div class="col-lg-4 col-11 m-auto my-md-0 my-5 yogaCards">
+                    <!-- name of asana which will be visible on mobile and tablet screens -->
+                    <div class="h1 fw-bold px-4 d-lg-none d-block pt-4 ">Ashtanga</div>
+                    <div class="roundImage rounded-circle p-lg-3 p-5 mx-3 position-relative">
+                         <!-- asana image -->
+                        <img src="./assets/images/Ashtanga.jpg" alt="Ashtanga Yoga" class="rounded-circle w-100" />
+                        <!-- name of asana which will be visible on hovering over the image -->
+                        <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">ashtanga</div>
+                    </div>
+                    <!-- three dotted icon present in the card -->
+                    <div class="fs-4 ps-1 d-lg-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <!-- asana name and description -->
+                    <div class="h3 fw-bold px-4 d-lg-block d-none">Ashtanga</div>
+                    <p class="ps-4 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
+                    <!-- day and timing -->
+                    <div class="d-flex mx-lg-4 border-top py-3 day justify-content-md-center">
+                        <div class="h4 fw-bold pe-3 mx-lg-0 mx-4">Tuesday</div>
+                        <div class="h4 fw-light">18:00 hs</div>
+                    </div>
+                </div>
+
+                <!-- third card -->
+                <div class="col-lg-4 yogaCards col-11 m-auto my-md-0 my-5">
+                    <!-- name of asana which will be visible on mobile and tablet screens -->
+                    <div class="h1 fw-bold px-4 d-lg-none d-block pt-4 ">Kundalini</div>
+                    <div class="roundImage rounded-circle p-lg-3 p-5 mx-3 position-relative">
+                         <!-- asana image -->
+                        <img src="./assets/images/Kundalini.jpg" alt="Kundalini Yoga" class="rounded-circle w-100" />
+                        <!-- name of asana which will be visible on hovering over the image -->
+                        <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">kundalini</div>
+                    </div>
+                    <!-- three dotted icon present in the card -->
+                    <div class="fs-4 ps-1 d-lg-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <!-- asana name and description -->
+                    <div class="h3 fw-bold px-4 d-lg-block d-none">Kundalini</div>
+                    <p class="ps-4 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
+                    <!-- day and timing -->
+                    <div class="d-flex mx-md-4 border-top py-3 day justify-content-md-center">
+                        <div class="h4 fw-bold pe-3 mx-lg-0 mx-4">Friday</div>
+                        <div class="h4 fw-light">13:30 hs</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show more button -->
+            <div class="row col-lg-3 col-10 col-md-5 m-auto align-items-center">
+                <button type="button"
+                    class="btn btn-lg my-3 px-5 py-3 rounded-pill text-uppercase text-white fw-bold">Show More</button>
+            </div>
+        </div>
     </section>
 
+    <!-- third section -->
+    <section class="bg-md-white">
+
+        <div class="row discountOffer pt-5 container-fluid m-0">
+            <!-- div containing details about offers -->
+            <div class="col-lg-3 col-md-6 mx-lg-0 mx-md-auto offset-md-1">
+                <div class="discountOuterDiv p-4 rounded-circle bg-transparent my-4">
+                    <!-- discount offer -->
+                    <div class="discountDiv rounded-circle bg-white p-5">
+                        <div class="py-2 text-center fw-light discountPercent"><span class="ten pe-2">10</span>%</div>
+                        <div class="h2 text-uppercase fw-normal text-center off">off</div>
+                    </div>
+                </div>
+                <!-- summer classes and timings -->
+                <div class="summerClasses mt-5 text-white px-5 py-5">
+                    <div class="summerClassesHeading text-uppercase fw-bold mb-0" data-text="SUMMER">Summer</div>
+                    <div class="summerClassesHeading text-uppercase mb-4" data-text="CLASSES">Class</div>
+                    <div class="date">
+                        <div class="h5 fw-bold mb-2">22.12.2020</div>
+                        <div class="h5 fw-bold">24.03.2021</div>
+                    </div>
+                    <!-- blank div for adjusting large margin -->
+                    <div class="blankSpace my-5 d-lg-block d-none"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- fourth section -->
     <section>
         <div class="practiceDynamicOuterDiv container-fluid">
-            <div class="practiceDynamics row bg-white px-md-5 pt-5 px-md-0 px-3">
-                <div class="text-uppercase fw-bold m-0 heading lh-1 fs-1 pt-4 d-md-none d-block">Practice <span class="fw-light">Dynamics</span></div>
-                <div class="content col-md-5 ms-md-5 pt-5 ps-md-5 order-md-1 order-2">
-                    <div class="text-uppercase fw-bold m-0 heading lh-1 fs-1 pt-4 d-md-block d-none">Practice <span class="fw-light">Dynamics</span></div>
-                    
+            <div class="practiceDynamics row bg-white px-lg-5 pt-5 px-3">
+                <!-- practice dynamic heading thw will be visible on mobile and tablet screens -->
+                <div class="text-uppercase fw-bold m-0 heading lh-1 fs-1 pt-4 d-lg-none d-block">Practice <span
+                        class="fw-light">Dynamics</span></div>
+                <div class="content col-lg-5 ms-lg-5 pt-5 ps-lg-5 order-lg-1 order-2">
+                    <!-- section heading -->
+                    <div class="text-uppercase fw-bold m-0 heading lh-1 pt-4 d-lg-block d-none">Practice <span
+                            class="fw-light">Dynamics</span></div>
 
+                        <!-- yoga description -->
                     <div class="yogaDescription my-5">
                         <div class="h3 text-uppercase fw-normal">1. <span class="fw-bold">hatha</span> yoga</div>
-                        <p class=" asanaDescription py-4">
-                            Hatha is the most classic yoga. Its origin is in the Raya Yoga of Patanjali and other classical texts such as Bhagawad Gita and Hatha Yoga Pradipika.
+                        <p class=" asanaDescription py-4 px-lg-0 px-md-5">
+                            Hatha is the most classic yoga. Its origin is in the Raya Yoga of Patanjali and other
+                            classical texts such as Bhagawad Gita and Hatha Yoga Pradipika.
                         </p>
-                        <div class="duration py-4">
+                        <div class="duration py-4 px-lg-0 px-md-5">
+                            <!-- details about the duration -->
                             <div class="h5 fw-bold">10 modules</div>
                             <div class="h5 fw-bold">divided into 7 weekends</div>
-                            <div class="d-flex py-4 fs-5 justify-content-evenly justify-content-md-start">
-                                <div class="start pe-md-5">
+                            <div class="d-flex py-4 fs-5 justify-content-evenly justify-content-lg-start">
+                                <div class="start pe-lg-5">
                                     <p class="mb-0 fw-bold">Start</p>
                                     <p class="mb-0">April 15</p>
                                     <p>20.00 hs</p>
@@ -191,44 +236,57 @@
                         </div>
                     </div>
                 </div>
-                <div class="right col-md-5 offset-md-1 align-self-start order-md-2 order-1">
+                <!-- yoga asana image -->
+                <div class="right col-lg-5 col-md-9 offset-lg-1 align-self-start order-lg-2 order-1 m-md-auto">
                     <div class="dynamicsImage p-3 mt-5 rounded-circle position-relative">
                         <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleTop" />
                         <div class="dynamicsImageInnerDiv p-3 rounded-circle">
-                            <img src="./assets/images/practice_hatha_yoga.png" alt="Hatha Yoga" class="m-0 rounded-circle"/>
+                            <img src="./assets/images/practice_hatha_yoga.png" alt="Hatha Yoga"
+                                class="m-0 rounded-circle" />
                         </div>
                         <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleBottom" />
                     </div>
-                    <div class="text-uppercase asanaName fs-2 ms-auto position-relative d-md-block d-none" data-text="HATHA">hatha</div>
+                    <!-- asana name highlighted at the side -->
+                    <div class="text-uppercase asanaName fs-2 ms-auto position-relative d-lg-block d-none"
+                        data-text="HATHA">hatha</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- fifth section -->
     <section>
-        <div class="practiceDynamicOuterDiv container-fluid pt-md-0 pt-5">
-        
-            <div class="positionsDynamics row bg-white px-md-5 pt-5 px-md-0 px-3">
-                <div class="text-uppercase fw-bold m-0 heading lh-1 fs-1 pt-4 d-md-none d-block">Position <span class="fw-light">Dynamics</span></div>
-                <div class="content col-md-5 ms-md-5 pt-5 ps-md-5 order-2">
-                    <div class="text-uppercase fw-bold m-0 heading lh-1 fs-1 pt-4 d-md-block d-none">Positions <span class="fw-light">Dynamics</span></div>
-                    
 
+        <!-- position dynamic section -->
+        <div class="practiceDynamicOuterDiv container-fluid pt-lg-0 pt-5">
+
+            <div class="positionsDynamics row bg-white px-lg-5 pt-5 px-lg-0 px-3">
+                <!-- section heading which will be visible on mobile and tablet screen -->
+                <div class="text-uppercase fw-bold m-0 heading lh-1 fs-1 pt-4 d-lg-none d-block">Position <span
+                        class="fw-light">Dynamics</span></div>
+                <!-- section heading -->
+                <div class="content col-lg-5 ms-lg-5 pt-5 ps-lg-5 order-2">
+                    <div class="text-uppercase fw-bold m-0 heading lh-1 pt-4 d-lg-block d-none">Positions 
+                        <span class="fw-light">Dynamics</span></div>
+
+                        <!-- yoga description -->
                     <div class="yogaDescription my-5">
                         <div class="h3 text-uppercase fw-normal">2. <span class="fw-bold">kundalini</span> yoga</div>
-                        <p class=" asanaDescription py-4">
-                            Kundalini is the most classic yoga. Its origin is in the Raya Yoga of Patanjali and other classical texts such as Bhagawad Gita and Hatha Yoga Pradipika.
+                        <p class=" asanaDescription py-4 px-lg-0 px-md-5">
+                            Kundalini is the most classic yoga. Its origin is in the Raya Yoga of Patanjali and other
+                            classical texts such as Bhagawad Gita and Hatha Yoga Pradipika.
                         </p>
+                        <!-- details about the duration -->
                         <div class="duration py-4">
                             <div class="h5 fw-bold">17 modules</div>
                             <div class="h5 fw-bold">divided into 5 weekends</div>
-                            <div class="d-flex py-4 fs-5 justify-content-evenly justify-content-md-start">
-                                <div class="start pe-md-5">
+                            <div class="d-flex py-4 fs-5 justify-content-evenly justify-content-lg-start">
+                                <div class="start pe-lg-5">
                                     <p class="mb-0 fw-bold">Start</p>
                                     <p class="mb-0">April 15</p>
                                     <p>20.00 hs</p>
                                 </div>
-                                <div class="price ps-md-4">
+                                <div class="price ps-lg-4">
                                     <p class="mb-0 fw-bold">Price</p>
                                     <p> $9.00</p>
                                 </div>
@@ -236,148 +294,189 @@
                         </div>
                     </div>
                 </div>
-                <div class="right col-md-5 ms-md-5 align-self-start order-1">
+                <!-- yoga image -->
+                <div class="right col-lg-5 ms-lg-5 align-self-start order-1 col-md-9 mx-md-auto">
                     <div class="dynamicsImage p-3 mt-5 rounded-circle position-relative">
-                        <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleTop"/>
+                        <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleTop" />
                         <div class="dynamicsImageInnerDiv p-3 rounded-circle">
-                            <img src="./assets/images/kundalini_asana.jpg" alt="Kundalini Asana" class="m-0 rounded-circle"/>
+                            <img src="./assets/images/kundalini_asana.jpg" alt="Kundalini Asana"
+                                class="m-0 rounded-circle" />
                         </div>
-                        <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleBottom"/>
+                        <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleBottom" />
                     </div>
-                    <div class="text-uppercase asanaName fs-2 position-relative d-md-block d-none" data-text="HATHA">hatha</div>
+                    <!-- yoga asana name highlighted at the side -->
+                    <div class="text-uppercase asanaName fs-2 position-relative d-lg-block d-none" data-text="HATHA">
+                        hatha</div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- sixth section -->
     <section>
         <div class="bg-white">
+            <!-- healthy life container -->
             <div class="container">
                 <div class="row py-5">
+                    <!-- heading -->
                     <div class="line col-md-5 align-self-start mt-3 border border-1"></div>
-                    <div class="h2 col-md-2 text-uppercase text-center p-0 m-0 fw-light lifestyleHeading"><span class="fw-bold">healthy </span>life</div>
+                    <div class="h2 col-md-2 text-uppercase text-center p-0 m-0 fw-light lifestyleHeading"><span
+                            class="fw-bold">healthy </span>life</div>
                     <div class="line col-md-5 align-self-start mt-3 border border-1"></div>
                 </div>
+                <!-- row containing three cards -->
                 <div class="row text-center py-4">
+                    <!-- first card (Exercise) -->
                     <div class="card col-md-4 border border-0 cursor-pointer py-3 col-11 m-auto">
+                        <!-- card image -->
                         <div class="px-5">
-                            <img src="./assets/images/exercise.jpg" alt="exercise"/>
+                            <img src="./assets/images/exercise.jpg" alt="exercise" />
                         </div>
+                        <!-- card description -->
                         <div class="card-body px-2">
                             <div class="card-title text-uppercase py-3 fs-5">exercise</div>
                             <div class="card-text">
-                                <p class="text-break mb-0">Lorem ipsum dolor sit amet consectetur adipisicing, elit molestie posuere</p>
+                                <p class="text-break mb-0">Lorem ipsum dolor sit amet consectetur adipisicing, elit
+                                    molestie posuere</p>
                             </div>
                         </div>
                     </div>
-    
+                    <!-- second card(Feeding) -->
                     <div class="card col-md-4 border border-0 cursor-pointer py-3 col-11 m-auto my-md-0 my-5 ">
                         <div class="px-5">
-                            <img src="./assets/images/feeding.jpg" alt="feeding"/>
+                        <!-- card image -->
+                            <img src="./assets/images/feeding.jpg" alt="feeding" />
                         </div>
+                        <!-- card description -->
                         <div class="card-body px-2">
                             <div class="card-title text-uppercase py-3 fs-5">feeding</div>
                             <div class="card-text">
-                                <p class="text-break mb-0">Lorem ipsum dolor sit amet consectetur adipisicing, elit molestie posuere</p>
+                                <p class="text-break mb-0">Lorem ipsum dolor sit amet consectetur adipisicing, elit
+                                    molestie posuere</p>
                             </div>
                         </div>
                     </div>
-    
+                    <!-- third card(Meditation) -->
                     <div class="card col-md-4 border border-0 cursor-pointer py-3 col-11 m-auto">
                         <div class="px-5">
-                            <img src="./assets/images/meditation.jpg" alt="meditation"/>
+                            <!-- card image -->
+                            <img src="./assets/images/meditation.jpg" alt="meditation" />
                         </div>
+                        <!-- card description -->
                         <div class="card-body px-2">
                             <div class="card-title text-uppercase py-3 fs-5">meditation</div>
                             <div class="card-text">
-                                <p class="text-break mb-0">Lorem ipsum dolor sit amet consectetur adipisicing, elit molestie posuere</p>
+                                <p class="text-break mb-0">Lorem ipsum dolor sit amet consectetur adipisicing, elit
+                                    molestie posuere</p>
                             </div>
                         </div>
                     </div>
-    
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- seventh section -->
     <section class="yogaClasses bg-white">
         <div class="container py-3">
             <div class="summerClassesDiv py-5 text-center">
+                <!-- section heading -->
                 <div class="h1 text-uppercase fw-light m-0">look at our</div>
                 <div class="h1 text-uppercase">summer classes</div>
             </div>
-        
-        <div class="row py-5 px-md-5 mx-md-4 yogaAsana">
+            <!-- row containing three cards -->
+            <div class="row py-5 px-lg-5 mx-lg-4 yogaAsana">
 
-            <div class="col-md-4 yogaCards col-11 my-md-0 my-5 m-auto">
-                <div class="h1 fw-bold px-md-4 d-md-none d-block pt-4">Anusara</div>
-                <div class="roundImage rounded-circle p-md-3 p-5 mx-md-3 position-relative">
-                    <img src="./assets/images/anusara_asana.png" alt="Anusara Asana" class="w-100 rounded-circle" />
-                    <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">anusara</div>
+                <div class="col-lg-4 yogaCards col-11 my-md-0 my-5 m-auto">
+                    <!-- yoga asana name -->
+                    <div class="h1 fw-bold px-md-4 d-lg-none d-block pt-4">Anusara</div>
+                    <div class="roundImage rounded-circle p-lg-3 p-5 mx-lg-3 position-relative">
+                        <!-- asana image -->
+                        <img src="./assets/images/anusara_asana.png" alt="Anusara Asana" class="w-100 rounded-circle" />
+                        <!-- asana name highlighted on hovering over the image -->
+                        <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">anusara</div>
+                    </div>
+                    <!-- three dotted icon -->
+                    <div class="fs-4 ps-1 d-lg-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <!-- asana name and description -->
+                    <div class="h3 fw-bold px-lg-4 d-lg-block d-none ">Anusara</div>
+                    <p class="ps-lg-5 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
+                    <!-- day and timing -->
+                    <div class="d-flex mx-lg-4 py-3 border-top day justify-content-md-center">
+                        <div class="h4 fw-bold pe-3 mx-lg-0 mx-4">Monday</div>
+                        <div class="h4 fw-light">20:00 hs</div>
+                    </div>
                 </div>
-                <div class="fs-4 ps-1 d-md-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
 
-                <div class="h3 fw-bold px-md-4 d-md-block d-none ">Anusara</div>
-                <p class="ps-md-5 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
+                <div class="col-lg-4 yogaCards col-11 m-auto my-md-0 my-5">
+                    <!-- name of asana which will be visible on hovering over the image -->
+                    <div class="h1 fw-bold px-lg-4 d-lg-none d-block pt-4">Kripalu</div>
+                     <!-- asana image -->
+                    <div class="roundImage rounded-circle p-lg-3 p-5 mx-lg-3 position-relative">
+                        <img src="./assets/images/kripalu_asana.jpg" alt="Kripalu Asana" class="rounded-circle w-100" />
+                        <!-- name of asana which will be visible on hovering over the image -->
+                        <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center"> kripalu</div>
+                    </div>
+                    <!-- three dotted icon present in the card -->
+                    <div class="fs-4 ps-lg-1 d-lg-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <!-- asana name and description -->
+                    <div class="h3 fw-bold px-lg-4 d-lg-block d-none">Kripalu</div>
+                    <p class="ps-lg-4 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
+                    <!-- day and timing -->
+                    <div class="d-flex mx-lg-4 py-lg-3 border-top day mx-2 justify-content-md-center">
+                        <div class="h4 fw-bold pe-3 mx-lg-0 mx-4">Tuesday</div>
+                        <div class="h4 fw-light">18:00 hs</div>
+                    </div>
+                </div>
 
-                <div class="d-flex mx-md-4 py-3 border-top day">
-                    <div class="h4 fw-bold pe-3 mx-md-0 mx-auto">Monday</div>
-                    <div class="h4 fw-light">20:00 hs</div>
+                <div class="col-lg-4 yogaCards col-11 m-auto my-lg-0 my-5">
+                    <!-- name of asana which will be visible on mobile and tablet screens -->
+                    <div class="h1 fw-bold px-lg-4 d-lg-none d-block pt-4">Bharata</div>
+                    
+                    <div class="roundImage rounded-circle p-lg-3 p-5 mx-lg-3 position-relative">
+                         <!-- asana image -->
+                        <img src="./assets/images/bharata_asana.jpg" alt="Bharata Asana" class="rounded-circle w-100" />
+                        <!-- name of asana which will be visible on hovering over the image -->
+                        <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center"> bharata</div>
+                    </div>
+                    <!-- three dotted icon present in the card -->
+                    <div class="fs-4 ps-lg-1 d-lg-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+                    <!-- asana name and description -->
+                    <div class="h3 fw-bold px-lg-4 d-lg-block d-none">Bharata</div>
+                    <p class="ps-lg-4 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
+
+                    <!-- day and timing -->
+                    <div class="d-flex mx-lg-4 py-lg-3 border-top day mx-2 justify-content-md-center">
+                        <div class="h4 fw-bold pe-3 mx-lg-0 mx-4">Friday</div>
+                        <div class="h4 fw-light">13:30 hs</div>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-4 yogaCards col-11 m-auto my-md-0 my-5">
-                <div class="h1 fw-bold px-md-4 d-md-none d-block pt-4">Kripalu</div>
-                <div class="roundImage rounded-circle p-md-3 p-5 mx-md-3 position-relative">
-                    <img src="./assets/images/kripalu_asana.jpg" alt="Kripalu Asana" class="rounded-circle w-100" />
-                    <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">kripalu</div>
-                </div>
-                <div class="fs-4 ps-md-1 d-md-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-                <div class="h3 fw-bold px-md-4 d-md-block d-none">Kripalu</div>
-                <p class="ps-md-4 fs-5">Lorem ipsum dolor sit consectetur adipisicing...</p>
-
-                <div class="d-flex mx-md-4 py-md-3 border-top day mx-2">
-                    <div class="h4 fw-bold pe-3 mx-md-0 mx-auto">Tuesday</div>
-                    <div class="h4 fw-light">18:00 hs</div>
-                </div>
-            </div>
-
-            <div class="col-md-4 yogaCards col-11 m-auto my-md-0 my-5">
-                <div class="h1 fw-bold px-md-4 d-md-none d-block pt-4">Bharata</div>
-                <div class="roundImage rounded-circle p-md-3 p-5 mx-md-3 position-relative">
-                    <img src="./assets/images/bharata_asana.jpg" alt="Bharata Asana" class="rounded-circle w-100" />
-                    <div class="h3 text-uppercase position-absolute imageTitle bg-dark text-white text-center rounded-circle m-0 d-flex justify-content-center align-items-center">bharata</div>
-                </div>
-                <div class="fs-4 ps-md-1 d-md-block d-none"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-                <div class="h3 fw-bold px-md-4 d-md-block d-none">Bharata</div>
-                <p class="ps-md-4 fs-5">Lorem ipsum dolor sit  consectetur adipisicing...</p>
-
-                <div class="d-flex mx-md-4 py-md-3 border-top day mx-2">
-                    <div class="h4 fw-bold pe-3 mx-md-0 mx-auto">Friday</div>
-                    <div class="h4 fw-light">13:30 hs</div>
-                </div>
+            <!-- Show more button -->
+            <div class="row col-lg-3 col-10 col-md-5 m-auto align-items-center">
+                <button type="button"
+                    class="btn btn-lg my-3 px-5 py-3 rounded-pill text-uppercase text-white fw-bold">Show More</button>
             </div>
         </div>
-        <div class="row col-md-3 col-10 m-auto align-items-center">
-            <button type="button" class="btn btn-lg my-3 px-5 py-3 rounded-pill text-uppercase text-white fw-bold">Show More</button>
-        </div>
-      </div>
     </section>
 
-
+    <!-- eigth section -->
     <section>
         <div class="practiceDynamicOuterDiv container-fluid position-relative">
-            <div class=" workshop row bg-white px-5 py-5">
-                <div class="col-md-1 asanaName text-uppercase fw-bold ms-3 initiation position-relative d-md-block d-none" data-text="INITIATION">
+            <div class="workshop row bg-white px-5 py-5">
+                <!-- text highlighted at the side -->
+                <div class="col-md-1 asanaName text-uppercase fw-bold ms-3 initiation position-relative d-lg-block d-none"
+                    data-text="INITIATION">
                     <p>initiation</p>
                 </div>
-                <div class="text-uppercase d-md-none d-block">
+                <!-- section heading -->
+                <div class="text-uppercase d-lg-none d-block">
                     <div class="h1">yoga initiation</div>
                     <div class="h1 fw-bold">workshop</div>
                 </div>
-
-                <div class="col-md-5 yogaInitiationWorkshop order-md-1 order-2">
-                    <div class="yogaInitiation text-uppercase d-md-block d-none">
+                <!-- description -->
+                <div class="col-lg-5 yogaInitiationWorkshop order-lg-1 order-2">
+                    <div class="yogaInitiation text-uppercase d-lg-block d-none">
                         <div>yoga initiation</div>
                         <div class="fw-bold">workshop</div>
                     </div>
@@ -390,37 +489,42 @@
                         <div class="h4">24.03.2021</div>
                     </div>
                 </div>
-                    
-
-                   
-                <div class="right col-md-5  align-self-start order-md-2 order-1">
-                    <div class="dynamicsImage p-3 mt-5 rounded-circle position-relative">
+                <!-- image -->
+                <div class="right col-lg-4 col-md-9 mx-md-auto align-self-start order-lg-2 order-1">
+                    <div class="dynamicsImage p-3 mt-4 rounded-circle position-relative">
+                        <!-- small rotating image -->
                         <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleTop" />
                         <div class="dynamicsImageInnerDiv p-3 rounded-circle">
-                           <div class="innerWorkshopDiv rounded-circle p-3 border-1">
+                            <div class="innerWorkshopDiv rounded-circle p-3 border-1">
                                 <div class="workshopImageDiv rounded-circle">
-                                    <img src="./assets/images/workshop.jpg" alt="Workshop" class="m-0 rounded-circle w-100"/>
+                                    <img src="./assets/images/workshop.jpg" alt="Workshop" class="m-0 rounded-circle w-100" />
                                 </div>
-                           </div>
+                            </div>
                         </div>
+                        <!-- small rotating image -->
                         <img src="./assets/images/Shape.png" alt="circle" class="position-absolute circleBottom" />
                     </div>
                 </div>
             </div>
-            <div class="text-uppercase asanaName fs-2 ms-auto position-absolute workshopText position-relative d-md-block d-none" data-text="WORKSHOP">workshop</div>
+            <!-- text highlighted on the side -->
+            <div class="text-uppercase asanaName fs-2 ms-auto position-absolute workshopText position-relative d-lg-block d-none"
+                data-text="WORKSHOP">workshop</div>
         </div>
-       
     </section>
 
+    <!-- footer section of the website -->
     <footer class="bg-white mb-5 py-5">
         <div class="container">
             <div class="row pt-6">
                 <div class="col-md-8 m-auto mt-5 pt-5">
                     <div class="icon d-flex justify-content-center pt-5">
-                        <img src="./assets/images/flowerIcon.png" alt="flower"/>
+                        <!-- logo -->
+                        <img src="./assets/images/flowerIcon.png" alt="flower" />
                     </div>
-                    <div class="h4 fw-bold text-uppercase text-center my-5 phrase">The asanas purify our body and keep it healthy, making it a suitable vehicle for the soul.</div> 
+                    <div class="h4 fw-bold text-uppercase text-center my-5 phrase">The asanas purify our body and keep
+                        it healthy, making it a suitable vehicle for the soul.</div>
                     <div class="icon d-flex justify-content-center">
+                        <!-- quotes -->
                         <img src="./assets/images/Mark.png" alt="mark" />
                     </div>
                 </div>
@@ -428,11 +532,12 @@
                     <div class="col-md-6">
                         <div class="h4 fw-bold text-uppercase">about</div>
                         <p class="mb-0 lh-0 footerDescription">Lorem ipsum dolor sit amet consec</p>
-                        <p class="lh-0 footerDescription">tetur, adipisicing elit. sed do euismod temper incididunt ultimam quantum.</p>
+                        <p class="lh-0 footerDescription">tetur, adipisicing elit. sed do euismod temper incididunt
+                            ultimam quantum.</p>
                         <div class="pt-5 d-md-block d-none">
-                            <img src="./assets/images/logo.png" alt="logo"/>
+                            <img src="./assets/images/logo.png" alt="logo" />
                         </div>
-                    </div>  
+                    </div>
                     <div class="col-md-5 row offset-md-1 mt-5 justify-content-between p-0">
                         <div class="col-md-4">
                             <div class="h5 text-uppercase fw-bold my-4">About</div>
@@ -463,13 +568,13 @@
                                 <li>Goals</li>
                             </ul>
                         </div>
-                    </div>              
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
 
-
+    <!-- js link for bootstrap5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
