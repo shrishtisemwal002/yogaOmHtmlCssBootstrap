@@ -5,9 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* div {
-    border: 2px solid red;
-} */
+div {
+    /* border: 2px solid red; */
+}
 button {
     background-color: #7d5a84 !important;
     transition: 1s;
@@ -16,8 +16,7 @@ button:hover {
     box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);
 }
 body {
-    /* background-color: rgba(125,90,132,255); */
-    background-color: white;
+    background-color: rgba(125,90,132,255);
     font-family: 'open sans';
     color: #7d5a84;
 }
@@ -294,6 +293,22 @@ footer ul li {
     }
     .yoga {
         font-size: 1px !important;
+    }
+    .yogaCards, .card{
+        box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);;
+    }
+
+    .discountOffer {
+        background: none;
+    }
+    .asanaDescription {
+        text-align: justify;
+    }
+    .imageTitle {
+        width: 69%;
+        height: 72%;
+        top: 13%;
+        left: 16%;
     }
 
     @keyframes circle {
