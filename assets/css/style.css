@@ -54,7 +54,7 @@ header {
     outline: 1px solid #c5a0cc;
     outline-offset: 22px;
 }
-.circleTop, .circleBottom {
+.circleTop, .circleBottom, .roundTop, .roundBottom {
     bottom: 48%;
     right: 49%;
 }
@@ -224,11 +224,17 @@ footer ul li {
 }
 
 /* animations */
-.circleTop{
+.circleTop {
     animation: circle 5s linear infinite;
 }
-.circleBottom{
+.circleBottom {
     animation: revolve 5s linear infinite
+}
+.roundTop {
+    animation: rotate 5s linear infinite;
+}
+.roundBottom {
+    animation: rotateBottom 5s linear infinite;
 }
 
 @keyframes circle {
@@ -249,6 +255,26 @@ footer ul li {
         transform: rotate(360deg)translate(-1000%)rotate(-360deg);
     }
 }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg)translate(800%)rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)translate(800%)rotate(-360deg);
+    }
+}
+
+@keyframes rotateBottom {
+    0% {
+        opacity: 1;
+        transform: rotate(0deg)translate(-800%)rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg)translate(-800%)rotate(-360deg);
+    }
+}
+
 
 @keyframes animate {
 
@@ -351,6 +377,14 @@ footer ul li {
 }
 
 @media (min-width:700px) and(max-width:1000px) { /* media query for tablet screen*/
+
+    .roundTop {
+        animation: circle 5s linear infinite;
+    }
+    .roundBottom {
+        animation: revolve 5s linear infinite;
+    }
+
     @keyframes circle {
         0% {
             transform: rotate(0deg)translate(1000%)rotate(0deg);
