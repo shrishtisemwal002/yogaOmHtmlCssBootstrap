@@ -311,9 +311,7 @@ footer ul li {
     body {
         text-align: center;
     }
-    .headingPara {
-        width: 254px;
-    }
+
     .transparentOuterCircle {
         padding: 20px;
     }
@@ -324,7 +322,6 @@ footer ul li {
     .yogaClassesHeading {
         background-position: top 2% right 2%;
     }
-
     .discountOffer {
         background: none;
     }
@@ -353,6 +350,14 @@ footer ul li {
 }
 
 @media (min-width:320px) and (max-width:700px) { /* media query for mobile screen*/
+
+    .headingPara {
+        width: 254px;
+    }
+    .descriptionHeading {
+        font-size: 20px !important;
+    }
+
     .yogaCards, .card{
         box-shadow: 0px 0px 25px 5px rgba(0,0,0,0.5);;
     }
@@ -377,6 +382,14 @@ footer ul li {
 }
 
 @media (min-width:700px) and(max-width:1000px) { /* media query for tablet screen*/
+
+    .headingPara {
+        width: 286px;
+    }
+
+    .descriptionHeading {
+        font-size: 33px !important;
+    }
 
     .roundTop {
         animation: circle 5s linear infinite;
