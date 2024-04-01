@@ -10,6 +10,6 @@ Installation Clone the repository:
 
 Copy code git clone https://github.com/shrishtisemwal002/yogaOmHtmlCssBootstrap.git
 
-Navigate to the project directory: cd holidayTravelHtmlCss
+Navigate to the project directory: cd yogaOmHtmlCssBootstrap
 
 Open the index.html file in your web browser to view the website locally.
